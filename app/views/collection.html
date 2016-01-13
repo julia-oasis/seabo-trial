@@ -1,0 +1,12 @@
+
+<div class="row marketing">
+  <h2>{{ repositories[collection.nuc] }}</h2>
+  <p>{{ total }} images marked &lsquo;{{ collection.title }}&rsquo;</a></p>
+  <p class="well" ng-bind-html="collection.note"></p>
+  <div class="clearfix">
+    <a ng-href="{{ image.fulltext }}" class="pull-left" ng-repeat="image in images">
+      <img class="thumbnail center-cropped" ng-src="{{ image.thumbnail }}" alt="Thumbnail for {{ image.title }}">
+    </a>
+  </div>
+
+</div>

@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <h1>Welcome to Seabo!</h1>
+  <p class="lead">
+    A gateway to open images in Trove.
+  </p>
+</div>
+
+<div class="row loading text-muted" ng-hide="images"><p>Loading resources&hellip;</p></div>
+
+<div class="row marketing"  ng-show="images">
+  
+  <h2>Our featured collection</h2>
+  <p><a href="#collections/{{ collection.id }}">{{ repositories[collection.nuc] }} has {{ total }} items marked {{ collection.title }}</a></p>
+  <div class="clearfix">
+    <a ng-href="{{ image.fulltext }}" class="pull-left" ng-repeat="image in images">
+      <img class="thumbnail center-cropped" ng-src="{{ image.thumbnail }}" alt="Thumbnail for {{ image.title }}">
+    </a>
+  </div>
+
+</div>

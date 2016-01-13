@@ -1,0 +1,8 @@
+<div class="row marketing">
+  <h2>Drawing images from the following collections</h2>
+  <ul>
+    <li ng-repeat="collection in collections">
+      <a ng-href="#/collections/{{ collection.id }}">{{ repositories[collection.nuc] }} -- {{ collection.title }}</a>
+    </li>
+  </ul>
+</div>
